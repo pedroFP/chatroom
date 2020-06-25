@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody id="chats">
+    <%= render @chats %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chat', new_chat_path %>
